@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#1E63FF"></rect>
+  <!-- White circular badge -->
+  <circle cx="512" cy="512" r="360" fill="#ffffff"></circle>
+  <!-- K (rounded strokes) -->
+  <path d="M 380 320 L 380 704" fill="none" stroke="#1E63FF" stroke-width="44" stroke-linecap="round"></path>
+  <path d="M 382 512 Q 450 450 530 380" fill="none" stroke="#1E63FF" stroke-width="44" stroke-linecap="round"></path>
+  <path d="M 382 512 Q 470 570 540 640" fill="none" stroke="#1E63FF" stroke-width="44" stroke-linecap="round"></path>
+  <!-- S (wave-like curve) -->
+  <path d="M 640 380 C 560 360 560 450 640 470 C 730 490 730 580 630 610 C 560 630 520 690 600 720" fill="none" stroke="#1E63FF" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
