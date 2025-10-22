@@ -18,19 +18,19 @@
     <nav class="nav">
         <ul class="nav-list">
             <li class="nav-item">
-                <a href="#">
+                <a href="index.html">
                     <img src="assests/Home.svg" alt="Home Icon" class="nav-icon">
                     Home
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#">
+                <a href="#projects-container">
                     <img src="assests/search.svg" alt="Search Icon" class="nav-icon">
-                    Search
+                    Projects
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#">
+                <a href="socials.html">
                     <img src="assests/Book open.svg" alt="Social Icon" class="nav-icon">
                     Socials
                 </a>
@@ -40,11 +40,21 @@
         <div class="top-played">
             <h2 class="nav-heading">Top Song This Month</h2>
             <img src="assests/Billy_Joel_-_Piano_Man.jpg" alt="Music-cover" class="nav-image">
+
+            <div class="music-player">
+                <audio id="topSong" src="assests/PianoMan.mp3"></audio>
+                <button id="playPauseBtn" class="play-pause">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DB954" width="28" height="28">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+            </div>
         </div>
+
     </nav>
 
     <header class="header">
-        <h1 class="heading"> Kinjal Srivastava </h1>
+        <h1 class="heading"> Kinjal Srivastava</h1>
         <img src="assests/WhatsApp Image 2025-07-09 at 16.26.20.jpeg" alt="Kinjal's Image" class="cover-image">
 
     </header>
@@ -133,64 +143,39 @@
         </div>
     </section>
 
-    <section class="tech-stack">
-        <a href=# class="tech-item">Java</a>
-        <a href=# class="tech-item">Python</a>
-        <a href=# class="tech-item">JavaScript</a>
-        <a href=# class="tech-item">React</a>
-        <a href=# class="tech-item">AWS</a>
-        <a href=# class="tech-item">SQL</a>
-        <a href=# class="tech-item">HTML</a>
-        <a href=# class="tech-item">CSS</a>
-        <a href=# class="tech-item">Git</a>
-
-    </section>
 
 
 
     <section class="experience">
         <h2 class="experience-heading">Projects</h2>
+        <section class="tech-stack">
+            <a href="#" class="tech-item active" data-tech="JavaScript">JavaScript</a>
+            <a href="#" class="tech-item" data-tech="Java">Java</a>
+            <a href="#" class="tech-item" data-tech="Python">Python</a>
+            <a href="#" class="tech-item" data-tech="React">React</a>
+            <a href="#" class="tech-item" data-tech="AWS">AWS</a>
+            <a href="#" class="tech-item" data-tech="HTML">HTML</a>
+            <a href="#" class="tech-item" data-tech="CSS">CSS</a>
+            <a href="#" class="tech-item" data-tech="ReactNative">React Native</a>
+            <a href="#" class="tech-item" data-tech="C">C</a>
+            <a href="#" class="tech-item" data-tech="ExpressJs">ExpressJs</a>
+        </section>
+    </section>
 
+    <section class="projects" id="projects-container">
 
-        <div class="experience-card">
-            <div class="experience-item">
-                <img src="assests/chaanv.png" alt="Kinjal's Image" class="experience-image">
-                <h3 class="experience-title">Channv Foundation</h3>
-                <h4 class="experience-role">Social Intern</h4>
-            </div>
-
-
-
-
-
-            <div class="experience-item">
-                <img src="assests/pcpicture.png" alt="Kinjal's Image" class="experience-image">
-                <h3 class="experience-title">Project Clay</h3>
-                <h4 class="experience-role">Tech/Operations Intern</h4>
-
-            </div>
-
-
-
-            <div class="experience-item">
-
-                <img src="assests/gppicture.png" alt="Kinjal's Image" class="experience-image">
-                <h3 class="experience-title">GradPilots</h3>
-                <h4 class="experience-role">Founder's Intern</h4>
-            </div>
-
-        </div>
+        <!-- JS will inject cards here -->
     </section>
 
 
     <footer class="footer">
         <p class="footer-text">© Kinjal Srivastava | 2025 </p>
-        <div class="social-icons">
-            <a href="#" class="social-icon"><img src="assests/github.svg" alt="GitHub"></a>
-            <a href="#" class="social-icon"><img src="assests/linkedin.svg" alt="LinkedIn"></a>
-            <a href="#" class="social-icon"><img src="assests/twitter.svg" alt="Twitter"></a>
-        </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="play-pause.js"></script>
+
+</body>
 
 
 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assests/first-icon.svg" type="image/x-icon">
+
+    <title> Kinjal-2025 </title>
+</head>
+
+<body>
+
+
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html">
+                    <img src="assests/Home.svg" alt="Home Icon" class="nav-icon">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects-container">
+                    <img src="assests/search.svg" alt="Search Icon" class="nav-icon">
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="socials.html">
+                    <img src="assests/Book open.svg" alt="Social Icon" class="nav-icon">
+                    Socials
+                </a>
+            </li>
+
+        </ul>
+        <div class="top-played">
+            <h2 class="nav-heading">Top Song This Month</h2>
+            <img src="assests/Billy_Joel_-_Piano_Man.jpg" alt="Music-cover" class="nav-image">
+
+            <div class="music-player">
+                <audio id="topSong" src="assests/PianoMan.mp3"></audio>
+                <button id="playPauseBtn" class="play-pause">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DB954" width="28" height="28">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="header">
+        <h1 class="heading">Socials</h1>
+        <img src="assests/WhatsApp Image 2025-07-09 at 16.26.20.jpeg" alt="Kinjal's Image" class="cover-image">
+
+    </header>
+
+    <!-- Action Buttons -->
+    <section class="actions">
+        <button class="btn play-btn" data-tooltip="Follow me">▶</button>
+        <a href="kinjal_resume(77).pdf" download class="btn download-btn" data-tooltip="Download resume">⬇</a>
+        <a href="#socials-list" class="btn add-btn" data-tooltip="Connect with me">+</a>
+    </section>
+
+
+
+    <section id="socials-list" class="socials-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/kinjal-srivastava-2b148b270/" target="_blank">Visit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>GitHub</td>
+                    <td><a href="https://github.com/kinjalsri" target="_blank">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>LeetCode</td>
+                    <td><a href="https://leetcode.com/u/kinjalsri01/" target="_blank">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Substack</td>
+                    <td><a href="https://substack.com/@kinzcan/posts" target="_blank">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Instagram</td>
+                    <td><a href="https://www.instagram.com/kinzcan_/" target="_blank">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kaggle</td>
+                    <td><a href="https://www.kaggle.com/kinjalsri01" target="_blank">Visit</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h2>Connect With Me</h2>
+        <form action="mailto:kinjalsrivastava1704@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="suggestion" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer-text">© Kinjal Srivastava | 2025 </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="play-pause.js"></script>
+
+</body>
