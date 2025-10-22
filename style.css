@@ -232,6 +232,7 @@ nav {
     background-color: #414040;
     padding: 20px;
     margin-left: 350px;
+
     width: calc(100% - 350px);
 }
 
@@ -597,10 +598,30 @@ footer a {
     background: #17a74a;
 }
 
-/* Large Tablets and smaller (≤ 1024px) */
-@media (max-width: 1024px) {
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+
+
+
+/* Large Tablets and smaller (≤ 1079px) */
+@media (max-width: 1079px) {
     nav {
         width: 280px;
+    }
+
+    .experience {
+        padding-top: 100px;
     }
 
     .header,
@@ -613,6 +634,7 @@ footer a {
     .contact-form {
         margin-left: 280px;
         width: calc(100% - 280px);
+
     }
 
     .heading {
@@ -649,6 +671,12 @@ footer a {
     .contact-form {
         margin-left: 0;
         width: 100%;
+
+
+    }
+
+    .experience {
+        padding-top: 300px;
     }
 
     .heading {
@@ -693,6 +721,13 @@ footer a {
     .contact-form input,
     .contact-form textarea {
         max-width: 100%;
+    }
+}
+
+/* Show the button on tablets & smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
     }
 }
 
