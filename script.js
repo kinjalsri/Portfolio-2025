@@ -19,8 +19,8 @@ const projectsData = {
 
    "React": [
     { title: "Disaster Alert App", img: "assests/react.png", link: "https://github.com/kinjalsri/CSA_Hackathon" },
-    { title: "Game Engine", img: "assests/react.png", link: "https://github.com/yourname/game-engine" },
-  ], 
+    { title: "React Learnings", img: "assests/react.png", link: "https://github.com/kinjalsri/React-Learnings" },
+  ],
 
   "AWS": [
     { title: "Notify", img: "assests/icons8-aws-logo-64.png", link: "https://github.com/kinjalsri/Note-it"},
